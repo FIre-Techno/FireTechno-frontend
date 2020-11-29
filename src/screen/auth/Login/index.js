@@ -7,6 +7,7 @@ import {
   ScrollView,
   Image,
   TextInput,
+  TouchableOpacity
 } from 'react-native';
 import {Button} from 'react-native-paper';
 import {ButtonWelcome, ButtonSignIn, ButtonSignUp} from '../../../components';
@@ -50,7 +51,7 @@ const Login = (props) => {
             underlineColorAndroid="#fff"
           />
           <Image
-            style={{marginLeft: '65%'}}
+            style={{position: 'absolute',right: '0%'}}
             source={require('../../../assets/illustration/eye.png')}
           />
         </View>
@@ -78,18 +79,57 @@ const Login = (props) => {
         <Text style={{margin: '4%', fontSize: 14}}>or sign in with</Text>
 
         <View style={{flexDirection: 'row'}}>
-          {/* <Button backgroundColor="pink" mode="outlined" onPress={() => console.log('Pressed')}> */}
+          <View style={{borderWidth: 1,
+          borderColor: '#2395FF',
+          alignItems: 'center',
+          borderRadius: 6,
+          paddingLeft: 30,
+          paddingRight: 30,
+          color: '#2395FF',
+          right: 20,
+          padding: 15}}>
+
+          <TouchableOpacity >
           <Image
-            style={{margin: '5%'}}
+            style={{ }}
             source={require('../../../assets/illustration/google.png')}></Image>
-          {/* </Button> */}
+          </TouchableOpacity>
+          </View>
 
-          {/* <Button  color="#4175DF" mode="outlined" onPress={() => console.log('Pressed')}> */}
+          <View style={{borderWidth: 1,
+          borderColor: '#2395FF',
+          alignItems: 'center',
+          borderRadius: 6,
+          paddingLeft: 30,
+          paddingRight: 30,
+          color: '#2395FF',
+          padding: 15,
+          }}>
 
+          <TouchableOpacity >
           <Image
-            style={{margin: '5%'}}
+            style={{ }}
             source={require('../../../assets/illustration/facebook.png')}></Image>
-          {/* </Button> */}
+          </TouchableOpacity>
+          </View>
+
+          <View style={{borderWidth: 1,
+          borderColor: '#2395FF',
+          alignItems: 'center',
+          borderRadius: 6,
+          paddingLeft: 30,
+          paddingRight: 30,
+          color: '#2395FF',
+          padding: 15,
+          left: 20}}>
+
+          <TouchableOpacity >
+          <Image
+            style={{ }}
+            source={require('../../../assets/illustration/finger.png')}></Image>
+          </TouchableOpacity>
+          </View>
+
         </View>
       </View>
     </ScrollView>
