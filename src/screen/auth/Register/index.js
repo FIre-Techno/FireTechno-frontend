@@ -63,7 +63,7 @@ const Register = (props) => {
             underlineColorAndroid="#fff"
           />
           <Image
-            style={{position: 'absolute',right: '0%'}}
+            style={{position: 'absolute', right: '0%'}}
             source={require('../../../assets/illustration/eye.png')}
           />
         </View>
